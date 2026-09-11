@@ -9,7 +9,7 @@ const Nav = () => {
         <img src={logoText} alt="" />
 
         <ul className="flex gap-8 items-center font-medium text-[#475569]">
-          <li className="text-[#D91B7E]">Home</li>
+          <li className="Etext-[#D91B7]">Home</li>
           <li>Technologies</li>
           <li>Projects</li>
           <li>About</li>
