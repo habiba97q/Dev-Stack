@@ -4,7 +4,7 @@ import logoText from "../assets/logo-text.png";
 const Nav = () => {
   return (
 
-    <nav className="  py-6">
+    <nav className=" sticky top-0 z-50 bg-white  py-6">
       <div className="container mx-auto flex justify-between">
         <img src={logoText} alt="" />
 
