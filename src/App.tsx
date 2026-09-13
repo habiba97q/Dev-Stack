@@ -3,6 +3,7 @@ import Banner from "./components/Banner"
 import Technologies from "./components/technologies/Technologies";
 import { Suspense } from "react";
 import type { Itechnologies } from "./types/technologiesType";
+import Footer from "./components/Footer"
 
 
 const technologiesFetch = async(): Promise<Itechnologies[]> =>{
@@ -23,6 +24,7 @@ function App() {
       <Suspense fallback ={<h2> Loading...</h2>}>
       <Technologies technologiesPromise ={technologiesPromise}  />
       </Suspense>
+      <Footer/>
     </>
   )
 }
