@@ -1,38 +1,48 @@
-import bannerImage from '../assets/banner-stack.png';
+import bannerImage from "../assets/banner-stack.png";
 
 const Banner = () => {
-    return (
-        <section className='container mx-auto flex justify-between items-center py-5' >
-            <div>
+  return (
+    <section className="container mx-auto px-4 py-10 md:py-16">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+        <div className="max-w-xl text-center lg:text-left">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Build Your Ideal <br />
+            <span className="text-brand-gradient">Development Stack</span>
+          </h1>
 
-                <h1 className="text-5xl font-bold">Build Your Ideal <br />
-                    <span className="bg-gradient-to-r from-orange-600 via-[#c2226a] via-pink-500 to-purple-600 bg-clip-text text-transparent">
-                        Development Stack
-                    </span> </h1>
+          <p className="text-[#334155] text-sm md:text-base mt-4 leading-relaxed">
+            Explore frontend, backend, database, and tooling options, compare
+            them side by side, and put together the stack that fits your next
+            project.
+          </p>
 
-                <p className="text-[#334155] text-sm w-[500px] mt-4">Explore frontend, backend, database, and tooling options,<br />
-                    compare them side by side, and put together the stack that fits your <br />
-                    next project.</p>
+          <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-3">
+            <a
+              href="#technologies"
+              className="btn bg-brand-gradient text-white border-none rounded-full px-6"
+            >
+              Explore Technologies
+            </a>
+            <a
+              href="#about"
+              className="btn btn-outline border-gray-300 text-[#475569] rounded-full px-6"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
 
-                <div  className="mt-6">
-                    <button className="btn bg-gradient-to-r from-orange-500 to-pink-500 text-white border-none mr-2">Explore Technologies</button>
-                    <button  className="btn bg-white text-[#475569] border border-[#E2E8F0]">Learn More</button>
-                </div>
-
-
-            </div>
-
-            <div>
-                <img src={bannerImage} alt=""/>
-
-            </div>
-
-
-
-        </section>
-
-
-    );
+        <div className="flex justify-center max-w-md w-full">
+          <img
+            src={bannerImage}
+            alt="Dev Stack illustration"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Banner;
+
